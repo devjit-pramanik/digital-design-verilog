@@ -22,6 +22,17 @@ I believe in learning by building and verifying real implementations rather than
 - Adds two 2-bit binary numbers
 - Built using Half Adder and Full Adder (modular design)
 
+## Waveform Results
+
+### Half Adder
+![Half Adder Waveform](wave_half.png)
+
+### Full Adder
+![Full Adder Waveform](wave_full.png)
+
+### 2-bit Adder
+![2-bit Adder Waveform](wave_twobit.png)
+
 ## Concepts Covered
 - Logic Gates
 - Combinational Circuits
@@ -45,5 +56,6 @@ My focus is on building a strong foundation in:
 - FPGA-based system design
 
 I am particularly interested in processor design and architecture, and I aim to work towards designing complete systems, including RISC-V based processors and System-on-Chip (SoC) architectures.
+
 
 Currently, I am following a structured learning path that involves hands-on projects, simulation, and gradual progression towards advanced hardware design and architecture concepts.
