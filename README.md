@@ -1,6 +1,6 @@
 # Digital Design using Verilog
 
-This repository contains basic digital design circuits, implementations and a mini project using Verilog.   
+This repository contains basic digital design circuits, implementations and mini projects using Verilog.   
 
 ## About Me
 
