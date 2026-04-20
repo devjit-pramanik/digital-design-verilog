@@ -18,9 +18,14 @@ I believe in learning by building and verifying real implementations rather than
 - Adds three inputs (A, B, Cin)
 - Outputs: SUM and Cout
 
-### 3. 2-bit Adder (Mini Project)
+### 3. 2-bit Adder 
 - Adds two 2-bit binary numbers
 - Built using Half Adder and Full Adder (modular design)
+
+### 4. 4-bit Ripple Carry Adder 
+- Adds two 4-bit binary numbers
+- Implemented using four full adders (modular design)
+- Also demonstrates carry propagation from LSB to MSB (ripple carry effect) 
 
 ## Waveform Results
 
