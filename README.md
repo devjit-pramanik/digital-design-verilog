@@ -38,6 +38,9 @@ I believe in learning by building and verifying real implementations rather than
 ### 2-bit Adder
 ![2-bit Adder Waveform](wave_twobit.png)
 
+### 4-bit Ripple Carry Adder
+![4-bit Adder Waveform](wave_fourbit.png)
+
 ## Concepts Covered
 - Logic Gates
 - Combinational Circuits
