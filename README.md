@@ -40,6 +40,8 @@ I believe in learning by building and verifying real implementations rather than
 - Demonstrates multi-level selection logic
 - Fully verified with multiple input combinations and waveform analysis
 
+The designs emphasize hardware-level thinking, where signals represent physical connections and selection is performed through control-driven routing rather than sequential computation.
+
 ### Key Concepts
 - Data selection vs computation
 - Select lines as control signals
@@ -59,6 +61,12 @@ I believe in learning by building and verifying real implementations rather than
 
 ### 4-bit Ripple Carry Adder
 ![4-bit Adder Waveform](wave_fourbit.png)
+
+### 2:1 MUX 
+![2:1 MUX Waveform](wave_muxtwo.png)
+
+### 4:1 MUX
+![4:1 MUX waveform](wave_muxfour.png)
 
 ## NAND-Based Implementations (Universal Gate Design)
 
@@ -83,6 +91,9 @@ These implementations demonstrate how complex digital circuits can be constructe
 - Testbench Writing
 - Simulation and Verification
 - Waveform Analysis
+- Multiplexer (MUX) design and implementation
+- Hierarchical circuit design
+- Control signal based data routing
 
 ## Tools Used
 - Icarus Verilog
