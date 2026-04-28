@@ -27,6 +27,25 @@ I believe in learning by building and verifying real implementations rather than
 - Implemented using four full adders (modular design)
 - Also demonstrates carry propagation from LSB to MSB (ripple carry effect) 
 
+## Multiplexer (MUX) Designs
+
+### 2:1 MUX
+- Selects one of two inputs based on control signal
+- Implemented using conditional operator
+- Verified using testbench and waveform
+
+### 4:1 MUX
+- Selects one of four inputs using two select lines (S1, S0)
+- Implemented using hierarchical design (2:1 MUX as building block)
+- Demonstrates multi-level selection logic
+- Fully verified with multiple input combinations and waveform analysis
+
+### Key Concepts
+- Data selection vs computation
+- Select lines as control signals
+- Hardware interpretation of conditional operator
+- Parallel and continuous signal behavior
+
 ## Waveform Results
 
 ### Half Adder
