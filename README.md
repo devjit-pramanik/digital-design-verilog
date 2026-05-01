@@ -89,10 +89,10 @@ The designs emphasize hardware-level thinking, where signals represent physical 
 ![4:1 MUX waveform](wave_muxfour.png)
 
 ### XOR using MUX
-![XOR Waveform](wave_xormux.png)
+![XOR Waveform](xor_mux waveform.png)
 
 ### XNOR using MUX
-![XNOR Waveform](wave_xnormux.png)
+![XNOR Waveform](xnor_mux waveform.png)
 
 ## NAND-Based Implementations (Universal Gate Design)
 
