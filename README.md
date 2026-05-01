@@ -1,12 +1,21 @@
 # Digital Design using Verilog
 
-This repository contains fundamental digital design implementations using Verilog, along with optimized gate-level designs and simulation-based verification.
-   
+This repository contains fundamental digital design implementations using Verilog. The focus is on understanding hardware behavior through modular design, hierarchical construction, and verification using testbenches and waveform analysis.
+
 ## About Me
 
 I am Devjit Pramanik, a first-year ECE student exploring digital design and hardware systems. I am currently focused on building a strong foundation in digital logic and Verilog through hands-on projects and simulation.
 I enjoy understanding how hardware works at a fundamental level and aim to gradually progress towards designing complex systems such as processors and system-level architectures.
 I believe in learning by building and verifying real implementations rather than only studying theory.
+
+## Highlights
+
+- Designed logic gates using NAND as a universal gate  
+- Implemented Half Adder and Full Adder  
+- Built 2-bit and 4-bit adders using modular design  
+- Designed 2:1 and 4:1 Multiplexers using hierarchical approach  
+- Implemented XOR and XNOR using 4:1 MUX (lookup table concept)  
+- Verified all designs using testbenches and waveform outputs  
 
 ## Projects Included
 
@@ -42,11 +51,22 @@ I believe in learning by building and verifying real implementations rather than
 
 The designs emphasize hardware-level thinking, where signals represent physical connections and selection is performed through control-driven routing rather than sequential computation.
 
+## MUX-Based Logic Implementation
+
+### XOR using 4:1 MUX
+- Implemented XOR by mapping truth table outputs to MUX inputs  
+- I0 = 0, I1 = 1, I2 = 1, I3 = 0  
+
+### XNOR using 4:1 MUX
+- Implemented XNOR using MUX-based logic  
+- I0 = 1, I1 = 0, I2 = 0, I3 = 1  
+
 ### Key Concepts
 - Data selection vs computation
 - Select lines as control signals
 - Hardware interpretation of conditional operator
 - Parallel and continuous signal behavior
+- A multiplexer can act as a lookup table, where select lines represent the address and inputs store the output values of a truth table.
 
 ## Waveform Results
 
@@ -68,6 +88,12 @@ The designs emphasize hardware-level thinking, where signals represent physical 
 ### 4:1 MUX
 ![4:1 MUX waveform](wave_muxfour.png)
 
+### XOR using MUX
+![XOR Waveform](wave_xormux.png)
+
+### XNOR using MUX
+![XNOR Waveform](wave_xnormux.png)
+
 ## NAND-Based Implementations (Universal Gate Design)
 
 To strengthen understanding of digital logic, the following circuits have been implemented using only NAND gates:
@@ -83,17 +109,23 @@ To strengthen understanding of digital logic, the following circuits have been i
 These implementations demonstrate how complex digital circuits can be constructed using a single universal gate while minimizing redundant computations.
 
 ## Concepts Covered
-- Logic Gates
-- Combinational Circuits
-- Universal Gates (NAND/NOR)
-- Modular Design in Verilog
-- Gate-Level Optimization
-- Testbench Writing
-- Simulation and Verification
-- Waveform Analysis
-- Multiplexer (MUX) design and implementation
-- Hierarchical circuit design
-- Control signal based data routing
+
+- Logic Gates and Combinational Circuits  
+- Universal Gates (NAND-based design)  
+- Modular and Hierarchical Design in Verilog  
+- Gate-Level Optimization  
+- Multiplexer (MUX) Design and Applications  
+- MUX as a Logic Implementation Tool  
+- Testbench Writing and Simulation  
+- Waveform Analysis and Verification  
+- Hardware-oriented thinking (parallel and continuous signals)
+
+## Future Work
+
+- Design and implement ALU  
+- Explore sequential circuits (Flip-Flops, Counters)  
+- Implement FSM-based designs  
+- Move towards FPGA-based implementation  
 
 ## Tools Used
 - Icarus Verilog
