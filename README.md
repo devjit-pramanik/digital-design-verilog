@@ -49,6 +49,13 @@ I believe in learning by building and verifying real implementations rather than
 - Demonstrates multi-level selection logic
 - Fully verified with multiple input combinations and waveform analysis
 
+### 5. 1-bit MUX-Based ALU
+- Supports 8 arithmetic and logic operations
+- Implemented using hierarchical MUX-based architecture
+- Reuses NAND-based operation modules
+- Demonstrates operation selection using control signals
+- Fully verified using simulation and waveform analysis
+
 The designs emphasize hardware-level thinking, where signals represent physical connections and selection is performed through control-driven routing rather than sequential computation.
 
 ## MUX-Based Logic Implementation
@@ -67,6 +74,51 @@ The designs emphasize hardware-level thinking, where signals represent physical 
 - Hardware interpretation of conditional operator
 - Parallel and continuous signal behavior
 - A multiplexer can act as a lookup table, where select lines represent the address and inputs store the output values of a truth table.
+
+## Arithmetic Logic Unit (ALU) Design
+- Designed and implemented a 1-bit ALU using hierarchical Verilog design
+- Supports 8 different operations using 3 select lines (S2 S1 S0)
+- Built using reusable modules and multi-level MUX-based selection architecture
+- Operations are grouped and selected using cascaded multiplexers
+
+### Supported Operations
+
+| S2 S1 S0 | Operation                      |
+| -------- | ------------------------------ |
+| 000      | AND                            |
+| 001      | OR                             |
+| 010      | XOR                            |
+| 011      | XNOR                           |
+| 100      | NAND                           |
+| 101      | NOR                            |
+| 110      | NOT                            |
+| 111      | ADD (SUM output of Half Adder) |
+
+### Design Architecture
+-Logic and arithmetic operations are continuously generated in parallel
+-4:1 multiplexers are used to select operations within groups
+-A final 2:1 multiplexer selects between operation groups
+-Implemented using hierarchical module instantiation and reusable building blocks
+
+### NAND-Based Modular Construction
+The ALU reuses previously designed NAND-based modules, including:
+
+-AND using NAND
+-OR using NAND
+-XOR using NAND
+-XNOR using NAND
+-NOT using NAND
+-Half Adder using NAND
+
+This demonstrates how higher-level hardware systems can be constructed from universal-gate-based modules through modular abstraction and signal routing.
+
+### Key Learnings
+-ALU operation selection using multiplexers
+-Multi-level MUX hierarchy and signal routing
+-Hardware interpretation of operation selection
+-Functional verification using targeted test cases
+-Parallel hardware behavior in combinational systems
+-System-level integration using reusable modules
 
 ## Waveform Results
 
@@ -94,6 +146,9 @@ The designs emphasize hardware-level thinking, where signals represent physical 
 ### XNOR using MUX
 ![XNOR Waveform](xnor_muxwaveform.png)
 
+### MUX-Based ALU
+![MUX ALU Waveform](mux_alu3.png)
+
 ## NAND-Based Implementations (Universal Gate Design)
 
 To strengthen understanding of digital logic, the following circuits have been implemented using only NAND gates:
@@ -119,6 +174,11 @@ These implementations demonstrate how complex digital circuits can be constructe
 - Testbench Writing and Simulation  
 - Waveform Analysis and Verification  
 - Hardware-oriented thinking (parallel and continuous signals)
+- Arithmetic Logic Unit (ALU) design
+- Multi-level multiplexer architecture
+- Operation selection using control signals
+- Hierarchical hardware integration
+- Functional verification strategy
 
 ## Future Work
 
@@ -142,6 +202,5 @@ My focus is on building a strong foundation in:
 - FPGA-based system design
 
 I am particularly interested in processor design and architecture, and I aim to work towards designing complete systems, including RISC-V based processors and System-on-Chip (SoC) architectures.
-
 
 Currently, I am following a structured learning path that involves hands-on projects, simulation, and gradual progression towards advanced hardware design and architecture concepts.
