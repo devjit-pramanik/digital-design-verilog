@@ -49,7 +49,7 @@ I believe in learning by building and verifying real implementations rather than
 - Demonstrates multi-level selection logic
 - Fully verified with multiple input combinations and waveform analysis
 
-### 5. 1-bit MUX-Based ALU
+### 1-bit MUX-Based ALU
 - Supports 8 arithmetic and logic operations
 - Implemented using hierarchical MUX-based architecture
 - Reuses NAND-based operation modules
